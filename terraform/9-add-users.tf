@@ -23,8 +23,8 @@
 #
 # Add the following:
 # [profile eks-developer]
-# role_arn = arn:aws:iam::<account-id>:role/<eks-developer-role-name>
-# source_profile = developer
+# role_arn = arn:aws:iam::<account-id>:role/<eks-developer-role-name> # The role that the user will assume to access the EKS cluster. This role should have the necessary permissions to access the cluster and should be created in the terraform code above.
+# source_profile = developer # The profile with the base credentials that has permissions to assume the role. This is usually the default profile or a profile created for this purpose.
 # region = us-west-2
 
 # Step 3: Verify role assumption (should return assumed-role ARN)
