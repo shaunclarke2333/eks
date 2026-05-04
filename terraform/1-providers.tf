@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   # Terraform version requirement
-  required_version = "~> 1.14.9"
+  required_version = "~> 1.15.0"
 
   # Required providers
   required_providers {
